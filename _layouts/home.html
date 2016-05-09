@@ -1,37 +1,50 @@
 ---
 layout: default
 ---
-<!-- Banner -->
-<section id="banner">
 
-  <!--
-    ".inner" is set up as an inline-block so it automatically expands
-    in both directions to fit whatever's inside it. This means it won't
-    automatically wrap lines, so be sure to use line breaks where
-    appropriate (<br />).
-  -->
-  <div class="inner">
+<body class="index">
+  <div id="page-wrapper">
 
-    <header>
-      <h2>SirSeim</h2>
-    </header>
-    <p><strong>SirSeim</strong>'s personal
-    <br />
-    web / blog / thing
-    <br />
-    powered by <a href="http://html5up.net">HTML5 UP</a>.</p>
-    <footer>
-      <ul class="buttons vertical">
-        <li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-      </ul>
-    </footer>
+    {% include header.html %}
 
-  </div>
+    <!-- Banner -->
+    <section id="banner">
 
-</section>
+      <!--
+        ".inner" is set up as an inline-block so it automatically expands
+        in both directions to fit whatever's inside it. This means it won't
+        automatically wrap lines, so be sure to use line breaks where
+        appropriate (<br />).
+      -->
+      <div class="inner">
 
-<div class="page-content">
-  <div class="wrapper">
+        <header>
+          <h2>SirSeim</h2>
+        </header>
+        <p><strong>SirSeim</strong>'s personal
+        <br />
+        web / blog / thing</p>
+        <footer>
+          <ul class="buttons vertical">
+            <li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+          </ul>
+        </footer>
+
+      </div>
+
+    </section>
+
     {{ content }}
+
+    {% include footer.html %}
+
   </div>
-</div>
+
+  {% include scripts.html %}
+  <script type="text/javascript">
+    $(function () {
+      $("body div header").addClass("alt");
+    });
+  </script>
+
+</body>
