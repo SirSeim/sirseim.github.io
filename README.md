@@ -1,4 +1,4 @@
-# sirseim.github.io
+# sirseim.github.io (seim.io)
 Personal Website
 
-# [SirSeim Website](https://sirseim.githib.io)
+# [SirSeim Website](https://seim.io)
